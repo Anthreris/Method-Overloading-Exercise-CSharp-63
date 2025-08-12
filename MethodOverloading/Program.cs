@@ -33,7 +33,14 @@
         
         static void Main(string[] args)
         {
-            Console.WriteLine(Add(1, 1, isCurrency: false));
+            var answer = Add(1, 0, isCurrency: true);
+            var decimalAnswer = Add(3, 3, isCurrency: true);
+            var trueAnswer = Add(1, 3, isCurrency: true);
+            var falseAnswer = Add(1, 1, isCurrency: false);
+
+            Console.WriteLine($"int Add: {answer}, decimal Add: {decimalAnswer}.");
+            Console.WriteLine(trueAnswer);
+            Console.WriteLine(falseAnswer);
         }
     }
 }
