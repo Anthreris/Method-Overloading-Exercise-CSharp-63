@@ -33,8 +33,8 @@
         
         static void Main(string[] args)
         {
-            var answer = Add(1, 0, isCurrency: true);
-            var decimalAnswer = Add(3, 3, isCurrency: true);
+            var answer = Add(1, 0);
+            var decimalAnswer = Add(3.5m, 3.7m);
             var trueAnswer = Add(1, 3, isCurrency: true);
             var falseAnswer = Add(1, 1, isCurrency: false);
 
